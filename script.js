@@ -44,7 +44,7 @@ function loadQuestion() {
 function checkAnswer(index) {
     const current = questions[currentQuestion];
     if (answerBtns[index].textContent === current.answer) {
-        result.textContent = "Correct!";
+        result.textContent = "✅ Correct!";
         result.className = "correct";
         currentQuestion++;
         if (currentQuestion < questions.length) {
@@ -54,7 +54,7 @@ function checkAnswer(index) {
             questionContainer.classList.remove("active");
         }
     } else {
-        result.textContent = "Wrong! Restarting the quiz...";
+        result.textContent = "❌ Wrong! Restarting the quiz...";
         result.className = "incorrect";
         setTimeout(() => {
             currentQuestion = 0;
@@ -62,9 +62,3 @@ function checkAnswer(index) {
         }, 1500);
     }
 }
-
-// End screen answer handling
-document.getElementById("amazing").addEventListener("click", () => alert("Thanks for playing!"));
-document.getElementById("good").addEventListener("click", () => alert("Thanks for playing!"));
-document.getElementById("decent").addEventListener("click", () => alert("Thanks for playing!"));
-document.getElementById("bad").addEventListener("click", () => alert("Thanks for playing!"));
