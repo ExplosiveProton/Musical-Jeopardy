@@ -1,4 +1,3 @@
-
 const questions = [
     { question: "Who composed 'On A Hymnsong Of Philip Bliss'?", answer: "David Holsinger", options: ["David Holsinger", "Adrian B. Sims", "Kenley Kristofferson", "Randall Standridge"] },
     { question: "Who composed 'Evergreen Escapades'?", answer: "Adrian B. Sims", options: ["Adrian B. Sims", "David Holsinger", "Brian Balmages", "Chicago"] },
