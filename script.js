@@ -47,6 +47,7 @@ function checkAnswer(index) {
         result.textContent = "✅ Correct!";
         result.className = "correct";
         currentQuestion++;
+
         if (currentQuestion < questions.length) {
             setTimeout(loadQuestion, 1500);
         } else {
@@ -61,4 +62,13 @@ function checkAnswer(index) {
             loadQuestion();
         }, 1500);
     }
+}
+
+// Restart button logic
+document.getElementById("restart-btn").addEventListener("click", restartQuiz);
+
+function restartQuiz() {
+    currentQuestion = 0;
+    document.getElementById("end-screen").classList.remove("active");
+    document.getElementById("start-screen").classList.add("active");
 }
