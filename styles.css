@@ -1,141 +1,59 @@
-
-/* Reset some default styles */
-* {
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-/* Body styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
-    color: #333;
-    text-align: center;
-}
-
-/* Container */
-.container {
-    margin-top: 50px;
-}
-
-/* Start Screen */
-.start-screen {
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
-}
-
-.start-screen h1 {
-    font-size: 48px;
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
-
-.start-screen p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.start-screen button {
-    padding: 12px 40px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.start-screen button:hover {
-    background-color: #45a049;
-}
-
-/* Question Screen */
-.question-container {
+.start-screen, .question-container, .end-screen {
     display: none;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.question-container p {
+.start-screen.active, .question-container.active, .end-screen.active {
+    display: block;
+}
+
+.question {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 .answer-buttons button {
-    margin: 15px;
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #e1e1e1;
-    border: none;
-    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    width: 80%;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .answer-buttons button:hover {
     background-color: #4CAF50;
     color: white;
-    transform: scale(1.05);
 }
 
-.answer-buttons button:active {
-    transform: scale(0.98);
-}
-
-/* Result Styling */
-.correct {
-    color: #28a745;
-    font-size: 20px;
-    margin-top: 20px;
+.correct { 
+    color: green;
 }
 
 .incorrect {
-    color: #dc3545;
-    font-size: 20px;
-    margin-top: 20px;
+    color: red;
 }
 
-/* End Screen */
-.end-screen {
-    display: none;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
-}
-
-.end-screen h2 {
-    font-size: 24px;
+h1 {
+    font-size: 48px;
     color: #333;
-    margin-bottom: 20px;
 }
 
-.end-screen button {
-    padding: 12px 40px;
-    background-color: #e1e1e1;
-    color: #333;
+button {
+    background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    padding: 12px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px;
+    font-size: 18px;
 }
 
-.end-screen button:hover {
-    background-color: #4CAF50;
-    color: white;
+button:hover {
+    background-color: #3e8e41;
 }
