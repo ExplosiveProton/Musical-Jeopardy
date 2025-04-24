@@ -15,10 +15,11 @@ h1 {
 }
 
 .question {
-    font-size: 32px; /* Increased size */
-    font-weight: bold;
-    color: #ffeb3b; /* Bright color for better visibility */
+    font-size: 40px; /* Huge font size */
+    font-weight: 900; /* Extra bold */
+    color: #ffeb3b; /* Bright yellow for contrast */
     margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for extra clarity */
 }
 
 button {
