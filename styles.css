@@ -14,7 +14,7 @@ body {
 .start-screen, .question-container, .end-screen {
     display: none;
     width: 100%;
-    max-width: 600px; /* Limits width for better readability */
+    max-width: 600px;
 }
 
 .start-screen.active, .question-container.active, .end-screen.active {
